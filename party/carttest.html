@@ -1,0 +1,113 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cart test – My First Rodeo</title>
+<style>
+body{font-family:-apple-system,system-ui,sans-serif;margin:0;padding:18px;background:#fbf6ef;color:#2b2118;max-width:560px;margin:auto}
+h1{font-size:24px;margin:6px 0} p{font-size:16px;line-height:1.4}
+.card{background:#fff;border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 2px 8px #0001}
+button,.btn{display:block;width:100%;box-sizing:border-box;font-size:20px;font-weight:700;padding:18px;border:0;border-radius:14px;background:#c8642b;color:#fff;text-align:center;text-decoration:none;-webkit-appearance:none}
+.small{font-size:14px;color:#6b5a4c} .alt{background:#38506b} .ok{background:#3f7d4a}
+ol{padding-left:20px;font-size:16px}
+</style></head><body>
+<h1>Cart test: My First Rodeo (9 items)</h1>
+<p>Try each option in <b>Safari</b>. After each one, tap <b>Check my cart</b> and note how many items are there. Then empty the cart before the next try.</p>
+<div class="card">
+<ol><li>Sign in to Amazon in Safari first (button below).</li>
+<li>Tap an option. If Amazon asks you to sign in or tap <b>Continue</b> / <b>Add to cart</b>, do it.</li>
+<li>Tap <b>Check my cart</b>. Count the items (should be 9).</li></ol>
+<a class="btn ok" href="https://www.amazon.com/gp/css/homepage.html?nodl=0">Step 1: Sign in to Amazon (in Safari)</a>
+</div>
+
+<div class="card">
+<form method="GET" action="https://www.amazon.com/gp/aws/cart/add.html">
+<input type="hidden" name="nodl" value="0">
+<span class="tagslot"></span>
+<input type="hidden" name="ASIN.1" value="B0GZGWZW8W">
+<input type="hidden" name="Quantity.1" value="1">
+<input type="hidden" name="ASIN.2" value="B082LQ398N">
+<input type="hidden" name="Quantity.2" value="1">
+<input type="hidden" name="ASIN.3" value="B0FSDSCFV2">
+<input type="hidden" name="Quantity.3" value="1">
+<input type="hidden" name="ASIN.4" value="B0C77WP3WW">
+<input type="hidden" name="Quantity.4" value="1">
+<input type="hidden" name="ASIN.5" value="B0GFP7LC9K">
+<input type="hidden" name="Quantity.5" value="1">
+<input type="hidden" name="ASIN.6" value="B0GYLXM5L9">
+<input type="hidden" name="Quantity.6" value="1">
+<input type="hidden" name="ASIN.7" value="B0H6R9QRCH">
+<input type="hidden" name="Quantity.7" value="1">
+<input type="hidden" name="ASIN.8" value="B0CJLR5SJ8">
+<input type="hidden" name="Quantity.8" value="1">
+<input type="hidden" name="ASIN.9" value="B0DLWFSZZ3">
+<input type="hidden" name="Quantity.9" value="1">
+<button type="submit">Option A</button></form>
+<p class="small">Amazon's official "Add to Cart form" (GET), sent from this page, with a flag that tells your iPhone to stay in Safari instead of jumping to the Amazon app.</p>
+</div>
+
+<div class="card">
+<a class="btn alt" target="_blank" rel="noopener" href="https://www.amazon.com/associates/addtocart?ASIN.1=B0GZGWZW8W&Quantity.1=1&ASIN.2=B082LQ398N&Quantity.2=1&ASIN.3=B0FSDSCFV2&Quantity.3=1&ASIN.4=B0C77WP3WW&Quantity.4=1&ASIN.5=B0GFP7LC9K&Quantity.5=1&ASIN.6=B0GYLXM5L9&Quantity.6=1&ASIN.7=B0H6R9QRCH&Quantity.7=1&ASIN.8=B0CJLR5SJ8&Quantity.8=1&ASIN.9=B0DLWFSZZ3&Quantity.9=1&nodl=0">Option B</a>
+<p class="small">A link straight to Amazon's add-to-cart confirm page (a web address the Amazon app doesn't grab), opened in a new Safari tab.</p>
+</div>
+
+<div class="card">
+<form method="GET" action="https://www.amazon.com/gp/aws/cart/add.html">
+<input type="hidden" name="nodl" value="0">
+<span class="tagslot"></span>
+<input type="hidden" name="OfferListingId.1" value="1TEE7sMmKSKQb6UDGcsSyTwSLajUMfKrmKACoaaldish7vSzdUKZeXgHjwv/kHGAHhPfx66kssze9nIB4M10pfafUZyVUXfK0hXeEVpgv5+yOF1HI6L2eGW8WcQqFXd1D0o3Ujr33khNdA50sQv6eo4OR3dfZtdWJl8ZB1NFtLkD+kKqitMx8BDDEhzJ1HlO">
+<input type="hidden" name="Quantity.1" value="1">
+<input type="hidden" name="OfferListingId.2" value="dmsmnQBfOhpm04nU3G40BGHKletDT9BQCNI6K4qBMW5p/YMrH7r4u+IO3EVqcVD6Oj+Lp4rdYBN1Nm4kbEL3k/WZ+xkndQJhwNisfJ5My1fnPs0DUEuuHJALJ+couGvvEzRD+oAGAa5FvaybONyji0VA7FKECl+vLsJNPCfYtZJyrd1QKjHmQQ80Px/WzzRL">
+<input type="hidden" name="Quantity.2" value="1">
+<input type="hidden" name="OfferListingId.3" value="rV/9zomVcUT1opmnYadiYRGpOABKWKy3KBmL0UcWi+0yrSc7mZL481QmzgZm1eE5Afi60tpYTraByZ3lTX2nQOGB5poPSrOv6SoA9SOdhGiSld46iWJJrjhVNiPMUPTbnhjLDL26rowPXwJrAB0cdzPLelQXccRYAIycdbN2Wjl6F68Cw9e/s+W9yaumBiHF">
+<input type="hidden" name="Quantity.3" value="1">
+<input type="hidden" name="OfferListingId.4" value="RiOO9zU5lobtwA+F1sbUQaMYJw4uop5GPNuHr+e+F4A/d2bqqhrJon3l5JtTq6fqeuMqlNeJN7k5yXqbtrrj4BBeWGMyxZ9GKJ6V+TYPTE2bVKz23RyWIKI7iotqZIhJKryrzWIjjpBAyH/Gp5F6IKoFSnt7HGHv+3/getTNe3McvgRFUC+wOHytGRsdWklP">
+<input type="hidden" name="Quantity.4" value="1">
+<input type="hidden" name="OfferListingId.5" value="07gO2KUiATe7oEiXNAH7iHiqg4X9XtGtw08BmUlztlnV5QyZM0h3dp04ml3bGqnL4seJlNbKSGVFJLsDIOPCp2aOVSSfCpcDkn/BsYHq52UVKJDyT+G6R7HJ8c+KiATEG2fTcU8ZARkY6aw3KixtY+XurLj5tOuqef10YyKDU9+vTk+kBqh18wMNnFyeZcCB">
+<input type="hidden" name="Quantity.5" value="1">
+<input type="hidden" name="OfferListingId.6" value="Zl87FB7ohugM8dcercWiBnOoCs1yRxJUbT19FTteRjbHgeOqmfkIvZilxcOot4UuO6edOBMaCfkqp+uwAtQMRsTMmh6FEgNy8nIX8OcJrGEJDqx70dcfDn2u5Dc90V2pTwIgIm1XgLj2546D2kkXSPrnljF/hvK6ds370vEfhFK+7kLolDpQ2yzbpkr8Fa2k">
+<input type="hidden" name="Quantity.6" value="1">
+<input type="hidden" name="OfferListingId.7" value="7AeFORhgq8dEfpBv9oaOR65JyT/NDk8jDH+y/WZTsK9+wxLmOZ5bipQN0Ohc9JJU1faET8gIhV/1sGY8kPMqA1GG5GksWgS5EbLcaZkUGReMQWd+BtCtXC5bRPZm2b3E7HbB3lPhonAmDrSFgQrUPadfmWkQER4ejXwEcf6OWaJNvQBErlijm4G0S2Q+RFh+">
+<input type="hidden" name="Quantity.7" value="1">
+<input type="hidden" name="OfferListingId.8" value="/zDuTkbDZ4DR1pOb+B46isXYWOnBASyR+hTtfblBXoQAOut0+eUm1HsypaMdpqdTNhyQnuaRwJAgpFzPsiOcHmoNqgDh0E73WDawbVR1NlojlFXu13mcmiJpcxUwKB7mhDdCA/eO8iVXQnRasVQRTjHP6vp1VxnlzbT/AEfAgeoYoiqG7MLxD/f0y1uKGS7I">
+<input type="hidden" name="Quantity.8" value="1">
+<input type="hidden" name="OfferListingId.9" value="CdC/PdqRFVi3rxwIPbuzju0vb1uoawtUUHjhba4yaHrV+iViYjR39Qb/aSJvPVCBjYVB3L1S2raViLKn41/3Jcis/nD5G19d5HxcinW1vjKUtiE5Vun5e9OZiKIPJ1fxPK9tZnTslPZ/EqJCgK+xBot3j6j5Pu6p95jXY/x0JUVz3xoi41Mxe5trBxHzIYVk">
+<input type="hidden" name="Quantity.9" value="1">
+<button type="submit">Option C</button></form>
+<p class="small">Same as A, but names the exact seller's offer for each item (all 9 are sold by other sellers, not Amazon). Offer codes were taken Oct 18 and can expire.</p>
+</div>
+
+<div class="card">
+<form method="POST" action="https://www.amazon.com/gp/aws/cart/add.html">
+<span class="tagslot"></span>
+<input type="hidden" name="ASIN.1" value="B0GZGWZW8W">
+<input type="hidden" name="Quantity.1" value="1">
+<input type="hidden" name="ASIN.2" value="B082LQ398N">
+<input type="hidden" name="Quantity.2" value="1">
+<input type="hidden" name="ASIN.3" value="B0FSDSCFV2">
+<input type="hidden" name="Quantity.3" value="1">
+<input type="hidden" name="ASIN.4" value="B0C77WP3WW">
+<input type="hidden" name="Quantity.4" value="1">
+<input type="hidden" name="ASIN.5" value="B0GFP7LC9K">
+<input type="hidden" name="Quantity.5" value="1">
+<input type="hidden" name="ASIN.6" value="B0GYLXM5L9">
+<input type="hidden" name="Quantity.6" value="1">
+<input type="hidden" name="ASIN.7" value="B0H6R9QRCH">
+<input type="hidden" name="Quantity.7" value="1">
+<input type="hidden" name="ASIN.8" value="B0CJLR5SJ8">
+<input type="hidden" name="Quantity.8" value="1">
+<input type="hidden" name="ASIN.9" value="B0DLWFSZZ3">
+<input type="hidden" name="Quantity.9" value="1">
+<button type="submit">Option D</button></form>
+<p class="small">Official form sent the other way (POST). Only works if you're already signed in; otherwise the sign-in page forgets the items.</p>
+</div>
+
+<div class="card">
+<a class="btn ok" target="_blank" rel="noopener" href="https://www.amazon.com/gp/cart/view.html?nodl=0">Check my cart</a>
+<p class="small">If any button opens the Amazon app instead, go back, press and hold the button, and pick "Open in New Tab".</p>
+</div>
+<script>
+// Amazon Associates tag (e.g. "j2arentals-20"). Leave blank until you have one.
+const ASSOC_TAG = "";
+if (ASSOC_TAG) document.querySelectorAll('.tagslot').forEach(s=>s.innerHTML='<input type="hidden" name="AssociateTag" value="'+ASSOC_TAG+'">');
+if (ASSOC_TAG) document.querySelectorAll('a[href*="associates/addtocart"]').forEach(a=>a.href+= '&AssociateTag='+encodeURIComponent(ASSOC_TAG));
+</script>
+</body></html>
